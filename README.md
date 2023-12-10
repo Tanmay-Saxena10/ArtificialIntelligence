@@ -16,6 +16,8 @@ Determine the drowsiness from these parameters
 
  <h1>📸 SCREENSHOTS </h1> 
 
+ <p><img src="https://github.com/Tanmay-Saxena10/Driver-Drowsiness-Detection/blob/main/screenshots/tanmay.png" align="center" height="350">
+<p><img src="https://github.com/Tanmay-Saxena10/Driver-Drowsiness-Detection/blob/main/screenshots/Tanmayd.png" align="center" height="350">
  
          
 
@@ -59,8 +61,13 @@ Special thanks to the creators 💙 of OpenCV, Dlib, Imutils, Numpy, Mediapipe, 
 
 Happy coding!
 
+<h2>EAR RATIO </h2>
+ <p><img src="https://github.com/Tanmay-Saxena10/Driver-Drowsiness-Detection/blob/main/screenshots/eye2.png" align="center" height="90">
+<p><img src="https://github.com/Tanmay-Saxena10/Driver-Drowsiness-Detection/blob/main/screenshots/eye3.jpg" align="center" height="180">
+
+
 <h3> Our contributors </h3>
 
-<a href= "contributors.md" > contributors.md </a>
+<a href= "https://github.com/Tanmay-Saxena10/Driver-Drowsiness-Detection/blob/main/screenshots/contributors.md" > contributors.md </a>
 
 
