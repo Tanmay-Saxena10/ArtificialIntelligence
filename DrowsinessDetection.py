@@ -10,9 +10,11 @@ import dlib
 #face_utils for basic operations of conversion
 from imutils import face_utils 
 
+from pygame import mixer
+
 import mediapipe 
 
-from playsound import playsound
+
 
 import time 
 
@@ -23,7 +25,7 @@ cap = cv2.VideoCapture(0)
 
 #Initializing the face detector and landmark detector 
 detector = dlib.get_frontal_face_detector() 
-predictor = dlib.shape_predictor("LandmarkDetection/shape_predictor_68_face_landmarks.dat") 
+predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat") 
 
 
 #status marking for current state  
@@ -33,10 +35,12 @@ active = 0
 status="" 
 color=(0,0,0) 
 
+mixer.init()
+mixer.music.load("beep.wav")
 
-def play_beep_sound():
-    sound_file = "beep.wav" 
-    playsound(sound_file)
+#def play_beep_sound():
+ #   sound_file = "beep.wav" 
+  #  playsound(sound_file)
 
 
 def compute(ptA,ptB):
@@ -92,7 +96,8 @@ while True:
             active = 0
             drowsy += 1
             if drowsy > 2:
-                status = "DROWSY !"
+                status = "DROWSY "
+                mixer.music.play()
                 color = (0, 0, 255)
         else:
             drowsy = 0
